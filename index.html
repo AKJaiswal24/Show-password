@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Show password</title>
+    <style>
+        body{
+            background: #262622;
+            width: 98%;
+            height: 90vh;
+            color: #fff;
+            display: grid;
+            place-items: center;
+        }
+        .pass input{
+            height: 20px;
+            width: 200px;
+            text-align: start;
+            border: 2px solid rgb(151, 255, 104);
+        }
+        input:focus{
+            border:2px solid green;
+        }
+        .pass i{
+            transform: translateX(-150%);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="main-box">
+        <label for="">Password</label>
+        <div class="pass">
+            <input type="password" id="password" class="pass" name="password" placeholder="Enter Password">
+            <i id="show-hide" class="fa-solid fa-eye-slash"></i>
+        </div>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
